@@ -1,0 +1,16 @@
+- name: Learning the Variables type OF prompt
+  hosts: local
+  connection: local
+  vars_prompt: 
+    - name: username
+      prompt: Enter username
+      private: yes
+    
+    - name: password
+      prompt: ENter your password
+      private: yes
+  tasks:
+    - name: printing my credentials which i stored
+      ansible.builtin.debug:
+        msg: Hi guys. My username is {{username}}
+
