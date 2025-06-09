@@ -1,0 +1,21 @@
+- name: playbook for variables
+  hosts: local
+  connection: local
+  vars:
+    course: DevSecOps
+    trainer: Shiva reddy
+    student: Saiteja
+    duration: 120 HRS
+  tasks:
+    - name: Printing my course details
+      vars:
+        course: ansible
+        duration: 15 hrs
+      ansible.builtin.debug:
+      #vars refernce should be surrounded by ""
+        msg: Hi guys, Strated learning {{ course }} from {{ trainer }} which is of {{duration}}
+    
+    - name: Printing my course details again
+      ansible.builtin.debug:
+      #vars refernce should be surrounded by ""
+        msg: Hi guys, Strated learning {{ course }} from {{ trainer }} which is of {{duration}}
