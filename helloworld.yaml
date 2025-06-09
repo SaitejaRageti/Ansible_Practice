@@ -1,9 +1,9 @@
 - name: Printing the message
-  hosts: local ##no need of username and password
-  connection: local 
+  hosts: local
+  connection: local  #username and passwor#d not needed
   tasks: 
     - name: My second playbook
       ansible.builtin.debug:
-       msg: Hello world. I started ansible. Will learn in detail.
+        msg: Hello world. I started ansible. Will learn in detail.
 
 
