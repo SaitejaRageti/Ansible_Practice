@@ -11,3 +11,8 @@
       ansible.builtin.debug:
       #vars refernce should be surrounded by ""
         msg: Hi guys, Strated learning {{ course }} from {{ trainer }} which is of {{duration}}
+    
+    - name: Printing my course details again
+      ansible.builtin.debug:
+      #vars refernce should be surrounded by ""
+        msg: Hi guys, Strated learning {{ course }} from {{ trainer }} which is of {{duration}}
