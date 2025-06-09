@@ -3,6 +3,7 @@
   tasks:
   - name: Pinging the node1
     ansible.builtin.ping:
+    
   - name: printing the message
     ansible.builtin.debug:
     msg: Hi Anu, I started ansible
