@@ -1,0 +1,12 @@
+- name: playbook for variables
+  hosts: local
+  connection: local
+  vars:
+    - course.yaml
+    
+  tasks:
+    - name: Printing my course details
+      ansible.builtin.debug:
+      #vars refernce should be surrounded by ""
+        msg: Hi guys, Strated learning {{ course }} from {{ trainer }} which is of {{duration}}
+    
