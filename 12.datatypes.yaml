@@ -18,6 +18,6 @@
     - name: printing my course and training info
       ansible.builtin.debug:
         msg: "Hi Guys!! I am learing course: {{ course }} from trainer: {{ trainer }} which is live {{ is_live }} amd its duration is {{ duration }} 
-          tools are {{ tools }} and concepts are {{ concepts }}
+          tools are {{ tools }} and concepts are {{ concepts }}"
 
 
