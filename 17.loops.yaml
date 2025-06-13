@@ -5,8 +5,8 @@
   tasks:
   - name: installing packages using loops
     ansible.builtin.dnf:
-      name: {{ item.name }}
-      state: {{ item.state }}
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop:
     - { name: nginx, state: removed }
     - { name: zip, state: installed }
