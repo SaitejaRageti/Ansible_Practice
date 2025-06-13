@@ -1,0 +1,13 @@
+- name: Learning loops
+  hosts: local
+  connection: local
+  become: yes
+
+  loop:
+    - Saiteja
+    - anu
+    - thippani
+  tasks:
+    - name: Printing my name and wife name
+      ansible.builtin.debug:
+        msg: " Hi guys!! my name is {{ item }}"
