@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   become: yes
-  varS:
+  vars:
     number: 25
 
   vars_files:
