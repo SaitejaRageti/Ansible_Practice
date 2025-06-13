@@ -2,9 +2,6 @@
   hosts: local
   connection: local
   become: yes
-  vars:
-    number: 25
-
   vars_files:
     - course.yaml
   tasks:
