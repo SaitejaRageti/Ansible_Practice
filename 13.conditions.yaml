@@ -10,5 +10,12 @@
       ansible.builtin.debug:
         msg: "GIVEN NUMBER : {{ number }} is is greater than  20"
       when: number > 20
+
+    - name: checking the given number is less than or equal to 50
+      vars:
+        number: 32
+      ansible.builtin.debug:
+        msg: "given number {{ number }} is less than or equal to 50"
+      when: number <= 50
   
   
