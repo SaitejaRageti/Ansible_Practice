@@ -6,9 +6,9 @@
   vars_files:
     - course.yaml
   tasks:
-    - name: checking the number value greater than 20 or not
+    - name: checking the number is greater than 20
       ansible.builtin.debug:
-        msg: "GIVEN NUMBER : {{ number }} is greater than 20"
-      when: number > 100
+        msg: "GIVEN NUMBER : {{ number }} is is greater than  20"
+      when: number > 20
   
   
