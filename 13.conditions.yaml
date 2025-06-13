@@ -1,0 +1,14 @@
+- name: Conditions demo
+  hosts: local
+  connection: local
+  become: yes
+
+  var_files:
+    - course.yaml
+  tasks:
+    - name: checking the number value greater than 20 or not
+      ansible.builtin.debug:
+        msg: "GIVEN NUMBER : {{ number }} is greater than 20"
+      when: {{ number }} >= 100
+  
+  
